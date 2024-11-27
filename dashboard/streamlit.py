@@ -20,13 +20,13 @@ st.title('Analisis Data Kualitas Udara 2013-2017')
 # df11 = pd.read_csv("dataset/PRSA_Data_Wanliu_20130301-20170228.csv")
 # df12 = pd.read_csv("dataset/PRSA_Data_Wanshouxigong_20130301-20170228.csv")
 # df_kualitas_udara = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12], axis=0)
-df_kualitas_udara = pd.read_csv('cleaned_air_quality_data.csv')
+df_kualitas_udara = pd.read_csv('dashboard/cleaned_air_quality_data.csv')
 df_kualitas_udara = df_kualitas_udara.reset_index()
 df_kualitas_udara.drop(columns=['level_0', 'index'], inplace=True)
 
 # sidebar
 with st.sidebar:
-    st.image("icon.png")
+    st.image("dashboard/icon.png")
     
     unique_years = sorted(df_kualitas_udara['year'].unique())
     tahun = st.slider(
