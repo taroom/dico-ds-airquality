@@ -8,7 +8,7 @@ https://dico-ds-airquality-taroom.streamlit.app/
 
 ```
 mkdir submission-data-science
-cd proyek_analisis_data
+cd submission-data-science
 pipenv install
 pipenv shell
 pip install -r requirements.txt
