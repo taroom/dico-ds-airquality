@@ -1,5 +1,9 @@
 # Air Quality Dashboard ✨
 
+## Streamlit
+
+https://dico-ds-airquality-taroom.streamlit.app/
+
 ## Setup Environment - Shell/Terminal
 
 ```
@@ -13,5 +17,5 @@ pip install -r requirements.txt
 ## Run steamlit app
 
 ```
-streamlit run dashboard.py
+streamlit run dashboard/streamlit.py
 ```
